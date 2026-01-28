@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger"; // Plugin to tag React compone
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({ // Export Vite configuration based on the current mode (development or production)
   server: { // Development server configuration
-    port: 8000, 
+    port: 5173, 
     hmr: { // Hot Module Replacement configuration use for live reloading during development
       overlay: false, // Disable the error overlay in the browser
     },
