@@ -1,3 +1,6 @@
+import { Request } from "express";
+import { Socket } from "socket.io";
+
 // Frontend request types 
 export type CreatePollFields = { 
 topic: string;
@@ -30,3 +33,14 @@ export type AddParticipantData = {
   userID: string;
   name: string;
 };
+
+
+// guard types
+export type AuthPayload = {
+  userID: string;
+  pollID: string;
+  name: string;
+};
+
+export type RequestWithAuth = Request & AuthPayload;
+export type SocketWithAuth = Socket & AuthPayload;
